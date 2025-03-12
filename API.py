@@ -5,7 +5,7 @@ from geopy.distance import geodesic
 app = Flask(__name__)
 
 # Load the database
-file_path = "/mnt/data/sample_volunteer_database.xlsx"
+file_path = "sample_volunteer_database.xlsx"
 df = pd.read_excel(file_path, sheet_name="Sheet1")
 
 @app.route('/find_matches', methods=['POST'])
